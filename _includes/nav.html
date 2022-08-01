@@ -1,0 +1,20 @@
+{% assign theme_base_url = if site.data.global.mode == 'development' ? site.data.global.dev_url : site.data.global.url %}
+
+{% assign navurl = page.url | remove: 'index.html' %}
+<ul>
+{% for link in include.nav %}
+	<li{% if page.url == link.url %} class="active" {% endif %}>
+		{% if link.url contains 'http://' or link.url contains 'https://' %}
+			{% assign pageurl = link.url %}
+		{% elsif link.subitems %}
+			{% assign pageurl = "#" %}
+		{% else %}
+			{% assign pageurl =  link.url | prepend:theme_base_url %}
+		{% endif %}
+		<a href="{{ pageurl }}">{{ link.text }}</a>
+    	{% if include.children and link.subitems %}
+    		{% include nav.html nav=link.subitems %}
+    	{% endif %}
+    </li>
+{% endfor %}
+</ul>

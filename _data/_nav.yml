@@ -1,0 +1,131 @@
+main:
+  - text: 'Home'
+    url: '/'
+  - text: 'About'
+    url: '/about/'
+  - text: 'Membership'
+    url: '/membership/'
+    subitems:
+      - text: 'Membership Criteria'
+        url: '/membership/'
+      - text: 'Membership - INGOS'
+        url: '/membership/international/'
+      - text: 'Membership - NNGOS'
+        url: '/membership/national/'
+  - text: 'What We Do'
+    url: '/what-we-do/'
+    subitems: 
+      - text: 'Information Sharing'
+        url: '/what-we-do/information-sharing/'
+      - text: 'Security'
+        url: '/what-we-do/security/'
+      - text: 'Policy'
+        url: '/what-we-do/policy/'
+      - text: 'External Engagement'
+        url: '/what-we-do/external-engagement/'
+      - text: 'INGO-NNGO Networking'
+        url: '/what-we-do/ngo-networking/'
+  - text: 'Resources'
+    url: '/resources/'
+  - text: 'Events'
+    url: '/events/'
+  - text: 'Tools'
+    url: '#'  
+    subitems:
+      - text: 'PSEA Toolkit'
+        url: '/tools/psea-toolkit/' 
+      - text: 'Resilience Exchange Network'
+        url: 'https://docs.southsudanngoforum.org/page/resilience-exchange-network'
+      - text: 'Documents Portal'
+        url: 'https://docs.southsudanngoforum.org'
+      - text: 'INGOs 3W Presence'
+        url: 'https://southsudanngoforum.org/3w'
+      - text: 'NNGOs 3W Presence'
+        url: 'https://southsudanngoforum.org/3w-nngo'
+      - text: 'State Coordination'
+        url: '/tools/state-coordination/'
+      - text: 'NNGO Capacity Tool'
+        url: '/nngo-capacity-tool/'
+      - text: 'Internship Initiative'
+        url: '/capacity-development/internship-initiative/'
+  - text: 'FAQs'
+    url: '/frequently-asked-questions/'
+  - text: 'Contact Us'
+    url: '/contact-us/'
+
+
+social:
+  - text: 'facebook'
+    url: 'https://www.facebook.com/SSNGOF/'
+  - text: 'twitter'
+    url: 'https://twitter.com/@ssngof'
+  - text: 'youtube'
+    url: '#'
+
+# forms & links
+# state_level_coordination_api: "//s3.amazonaws.com/uploads.knightlab.com/storymapjs/0589704e28470f31498c599e48ca0d77/state-level-coordination/"
+state_level_coordination_api: "/api/state-level-coordination/"
+# clusters_url: "http://apps.southsudanngoforum.org/data/cluster_meetings"
+clusters_url: "https://apps.southsudanngoforum.org/api/data/cluster-meetings"
+
+nngo_expo_registration_form: "https://goo.gl/forms/9ANQeVWYQ10QvQdp2"
+
+ingo_profiles_link: "https://services.southsudanngoforum.org/api/services/profiles/ingo/2022"
+nngo_profiles_link: "https://services.southsudanngoforum.org/api/services/profiles/nngo/2022"
+
+# internship_initiative_link: "https://goo.gl/forms/tT6gM6yRTF5MNcY22"
+
+internship_initiative_link: "https://services.southsudanngoforum.org/internships/requirements/application"
+
+internship_initiative_host_agency_link: "https://services.southsudanngoforum.org/internships/requirements/hostagency"
+
+membership_registration_page: "/membership/registration/"
+
+# membership_registration_page: "/membership/registration-closed/"
+
+# 2017
+# membership_registration_form: "https://goo.gl/forms/XYcswkyOXJMBEBfL2"
+
+# 2018
+# membership_registration_form: "https://goo.gl/forms/uxJXT3zKP8G6fsTY2"
+
+membership_registration_form: "https://services.southsudanngoforum.org/registrations/membership/certificate"
+
+# https://docs.google.com/forms/d/1rICS4K_w2WpXDss0B-gb74j_9kgDy4oODi13IKOq6wc/viewform?usp=send_form
+report_security_incident_form: "https://goo.gl/forms/hrJDBYIH4xpmv0Mp2"
+
+access_constraint_form: "https://goo.gl/forms/KwRKs42DdlzIPSzn2"
+emergency_relocation_form: "https://docs.google.com/a/southsudanngoforum.org/forms/d/14dEkJF3oIA_LmlNq6FBVD5YpuRW8lwABQ1_0pfvUeF0/viewform?"
+sexual_violence_form: "https://docs.google.com/forms/d/e/1FAIpQLScfEwG-JXWsuFr5gqIpqAI5m3EirB1sQ7GX2Y52yM102tvNIg/viewform"
+    
+operational_presence:    
+    - { text: 'update_3W_form', "url": "https://goo.gl/forms/4oeO580OmvUHeJ2S2" }
+
+job_adverts_link: "http://comms.southsudanngoforum.org/c/jobs"
+mailinglist_link: "http://comms.southsudanngoforum.org/"
+tenders_link: "http://comms.southsudanngoforum.org/c/tenders"
+
+document_repository_link: "https://docs.southsudanngoforum.org/"
+document_repository_faqs_link: "https://docs.southsudanngoforum.org/api/json/frequently-asked-questions"
+# document_repository_faqs_link: "http://localhost/SSNGOF/ngo-forum-docs/web/api/json/frequently-asked-questions"
+
+knowledge_network_link: "https://docs.southsudanngoforum.org/sskn"
+capacity_development_link: "https://comms.southsudanngoforum.org/c/capacity-development"
+courses_and_trainings_link: "https://comms.southsudanngoforum.org/c/capacity-development"
+
+#documents
+security_documents_link: "https://docs.southsudanngoforum.org/index.php/security/security-guidance-documents"
+coordination_documents_link: "https://docs.southsudanngoforum.org/index.php/regulation/circulars"
+legislation_documents_link: "https://docs.southsudanngoforum.org/index.php/regulation/legislation"
+resilience_exchange_link: "https://docs.southsudanngoforum.org/page/resilience-exchange-network"
+
+statutes_of_operations_link: "https://docs.southsudanngoforum.org/sites/default/files/2022-01/NGO-Forum-South-Sudan-Statutes-of-Operation-March-2020-FINAL.pdf"
+
+ingo_operation_presence_link: "https://southsudanngoforum.org/3w"
+nngo_operation_presence_link: "https://southsudanngoforum.org/3w-nngo"
+# nngo_capacity_tool: "http://139.162.185.43/ngo-forum-captool/"
+nngo_capacity_tool: "https://nngocaptool.southsudanngoforum.org/"
+operational_presence_tool: "https://southsudanngoforum.org/3w"
+
+events_link: "https://apps.southsudanngoforum.org/events/home"
+create_event_link: "https://apps.southsudanngoforum.org/events/create"

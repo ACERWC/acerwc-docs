@@ -1,0 +1,27 @@
+# mode: production
+mode: development
+
+# Admin Settings
+admin_name: 'Communications Officer'
+admin_email: ' acerwc-secretariat@africa-union.org'
+
+# Site settings
+title: African Committee of Experts on the Rights and Welfare of the Child
+abbrev: ACERWC
+mission: "To promote, protect, interpret and monitor the implementation of the rights the rights enshrined in the ACRWC Charter "
+
+email:  acerwc-secretariat@africa-union.org
+description: "."
+keywords: "ACERWC, The African Committee of Experts on the Rights and Welfare of the Child, AU, Communications, Ratifications, Children, Children Welfare"
+
+dev_url: //localhost:4000
+url:  //www.acerwc.africa
+
+# Color settings (hex-codes without the leading hash-tag)
+color:
+  primary: 303030 #18bc9c #80B3FF
+  secondary: 6C4D80 #FD6E8A
+  secondary-dark: 303030 #A2122F
+
+# Postal address (add as many lines as necessary)
+address: Nala House, Balfour Road, Maseru, Kingdom of Lesotho
