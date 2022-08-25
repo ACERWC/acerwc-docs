@@ -389,9 +389,7 @@ header .brand {
 .bs-docs-sidenav li.act_item dt {
   background: #f5f5f5;
 }
-.bs-docs-sidenav li.act_item dt a:before {
-  /*color: @themeBlue;*/
-}
+
 .bs-docs-sidenav li.open_item dt i:before {
   content: "\f068";
 }
