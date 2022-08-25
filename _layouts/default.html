@@ -16,111 +16,103 @@
   <link rel="canonical" href="{{ page.url | replace:'index.html', '' | prepend: theme_base_url }}">  
   <link rel="icon" type="image/ico" href="favicon.ico">
   <title>{% if page.title %}{{ page.title }}{% else %}{{ site.data.global.title }}{% endif %}</title>
-  <link rel="stylesheet" type="text/css" href="assets/vendor/bootstrap/css/bootstrap.min.css" />
-  <link rel="stylesheet" type="text/css" href="assets/vendor/font-awesome/css/all.min.css" />
-  <link rel="stylesheet" type="text/css" href="assets/vendor/magnific-popup/magnific-popup.min.css" />
-  <link rel="stylesheet" type="text/css" href="assets/vendor/highlight.js/styles/github.css" />
-  <link rel="stylesheet" type="text/css" href="assets/css/stylesheet.css" />
-</head>
-<body data-spy="scroll" data-target=".idocs-navigation" data-offset="125">
-<div class="preloader">
-  <div class="lds-ellipsis">
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-  </div>
-</div>
-<div id="main-wrapper"> 
-  <header id="header" class="sticky-top"> 
-    <nav class="primary-menu navbar navbar-expand-lg navbar-dropdown-dark">
-      <div class="container-fluid">
-		  <button id="sidebarCollapse" class="navbar-toggler d-block d-md-none" type="button"><span></span><span class="w-75"></span><span class="w-50"></span></button>
-      <a class="logo" href="{{ theme_base_url }}" title="{{  site.data.global.title }}"> <img height="64px"src="assets/images/logo.png" alt="{{ site.data.global.title}}"/> </a> 
-		  <span class="text-2 ml-2">v1.0</span>
 
-		  <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#header-nav"><span></span><span></span><span></span></button>
-        <div id="header-nav" class="collapse navbar-collapse justify-content-end">
-          <ul class="navbar-nav">
-            <li><a target="_blank" href="http://acerwc.africa/">Website</a></li>
-          </ul>
+  <link href="assets/css/font-awesome.css" media="all" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="assets/css/bootstrap.css" media="screen">
+  <link rel="stylesheet" href="assets/css/style.css" media="screen">
+  <link rel="stylesheet" href="assets/css/stylesheet.css" media="screen">
+</head>
+<body>
+	<div class="mobile-menu"></div>
+  <div id="content">
+    <div class="bg-content-top">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-xs-12 col-md-3 col-lg-2">
+            <div class="affix-top" id="nav_container">
+              <a href="/" id="affect_all" target="_blank"> <span class="expand" style="padding-top: 10px;display: block;"><strong>ACERWC</strong></span></a>
+              <div class="clearfix"></div>              
+              <ul class="nav nav-list bs-docs-sidenav" id="nav">
+                <li class="nav-item item1 first">
+                  <dl class="slide-down"> <dt><a href="/index/" class="fa fa-info">Getting Started</a></dt>
+                  </dl>
+                </li>
+                <li class="nav-item item2">
+                  <dl class="slide-down">
+                    <dt><a href="/getting-started/why-drupal" class="fa fa-info">Why Drupal</a> <i class="fa fa-sample"></i></dt>
+                  </dl>
+                    <dd style="display: none;">
+                      <ul class="list">
+                        <li class="first"><a class="nav-link" href="/getting-started/installation">Installation</a></li>
+                        <li class="first"><a class="nav-link" href="/getting-started/site-planning">Site Planning</a></li>
+                        <li class="first"><a class="nav-link" href="/getting-started/website-management">Website Management</a></li>
+                        <li class="first"><a class="nav-link" href="/getting-started/content-types">Content Types</a></li>
+                        <li class="first"><a class="nav-link" href="/getting-started/appearance">Appearance</a></li>
+                      </ul>
+                  </dd>
+                </li>   
+                <li class="nav-item item3">
+                  <dl class="slide-down">
+                    <dt><a href="#" class="fa fa-info">Blocks</a><i class="fa fa-sample"></i></dt>
+                  </dl>
+                  <dd style="display: none;">
+                    <ul class="list">
+                      <li class="first"><a class="nav-link" href="/regions-blocks/">Block Layout</a></li>
+                      <li class="first"><a class="nav-link" href="/regions-block-config">Block config</a></li>
+                    </ul>
+                  </dd>
+                </li>
+                <li class="nav-item item7">
+                  <dl class="slide-down">
+                    <dt><a href="#" class="fa fa-info">Content Types</a></dt>
+                  </dl>
+                </li> 
+                <li class="nav-item item7">
+                  <dl class="slide-down">
+                    <dt><a href="#" class="fa fa-info">Using content builder</a></dt>
+                  </dl>
+                </li> 
+                <li class="nav-item item8">
+                  <dl class="slide-down">
+                    <dt><a href="#theme_setting" class="fa fa-angle-double-right">7. Theme settings</a><i class="fa fa-sample"></i></dt>
+                  </dl>
+                <dd style="display: none;">
+                    <ul class="list">
+                      <li class="first "><a href="#setting_gerenal"><i class="fa fa-sample"></i>Gerenal options</a></li>
+                      <li class="first "><a href="#setting_header"><i class="fa fa-sample"></i>Header options</a></li>
+                     <li class="first "><a href="#setting_social"><i class="fa fa-sample"></i>Social options</a></li>
+                      <li class="first "><a href="#setting_footer"><i class="fa fa-sample"></i>Footer options</a></li>
+                      <li class="first "><a href="#setting_customize"><i class="fa fa-sample"></i>Settings Customize</a></li>
+                      <li class="first "><a href="#setting_css"><i class="fa fa-sample"></i>Customize css</a></li>
+                    </ul>
+                  </dd>
+              </li>
+              <li class="nav-item item10 last">
+                <dl class="slide-down"> <dt><a href="#finally" class="fa fa-angle-double-right">Finally</a></dt>
+                </dl>
+              </li>
+              <li class="nav-item item10 last">
+                  <dl class="slide-down"> <dt><a href="/drupal-updates/" class="fa fa-angle-double-right" style="color: #ff1d4e; font-weight: 700;">Update Drupal 9</a></dt>
+                  </dl>
+              </li>                                          
+              </ul>
+            </div>
+          </div> 
+          <div class="col-xs-12 col-md-9 col-lg-10">
+            {{ content }}
+          </div> 
         </div>
-        <ul class="social-icons social-icons-sm ml-lg-2 mr-2">
-          <li class="social-icons-twitter"><a data-toggle="tooltip" href="#" target="_blank" title="" data-original-title="Twitter"><i class="fab fa-twitter"></i></a></li>
-          <li class="social-icons-facebook"><a data-toggle="tooltip" href="#" target="_blank" title="" data-original-title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
-          <li class="social-icons-dribbble"><a data-toggle="tooltip" href="#" target="_blank" title="" data-original-title="Dribbble"><i class="fab fa-dribbble"></i></a></li>
-        </ul>
       </div>
-    </nav>
-  </header>
-  
-  <div id="content" role="main">
-    <div class="idocs-navigation bg-light">
-      <ul class="nav flex-column ">
-        <li class="nav-item">
-          <a class="nav-link active" href="/index/">Getting Started</a>
-          <ul class="nav flex-column">
-            <li class="nav-item"><a class="nav-link" href="/getting-started/why-drupal">Why Drupal</a></li>
-            <li class="nav-item"><a class="nav-link" href="/getting-started/installation">Installation</a></li>
-            <li class="nav-item"><a class="nav-link" href="/getting-started/site-planning">Site Planning</a></li>
-            <li class="nav-item"><a class="nav-link" href="/getting-started/website-management">Website Management</a></li>
-            <li class="nav-item"><a class="nav-link" href="/getting-started/content-types">Content Types</a></li>
-            <li class="nav-item"><a class="nav-link" href="/getting-started/appearance">Appearance</a></li>
-          </ul>
-        </li>
-        <li class="nav-item"><a class="nav-link" href="#idocs_layout">Layout</a>
-          <ul class="nav flex-column">
-            <li class="nav-item"><a class="nav-link" href="#idocs_header">Header</a></li>
-            <li class="nav-item"><a class="nav-link" href="#idocs_navbar">Navbar</a></li>
-            <li class="nav-item"><a class="nav-link" href="#idocs_sidebar">Sidebar</a></li>
-            <li class="nav-item"><a class="nav-link" href="#idocs_footer">Footer</a></li>
-            <li class="nav-item"><a class="nav-link" href="#idocs_box_layout">Box Layout</a></li>
-          </ul>
-        </li>
-        <li class="nav-item"><a class="nav-link" href="#idocs_content">Content</a>
-          <ul class="nav flex-column">
-            <li class="nav-item"><a class="nav-link" href="#idocs_typography">Typography</a></li>
-            <li class="nav-item"><a class="nav-link" href="#idocs_code">Code</a></li>
-            <li class="nav-item"><a class="nav-link" href="#idocs_table">Table</a></li>
-            <li class="nav-item"><a class="nav-link" href="#idocs_icons">Icons</a></li>
-            <li class="nav-item"><a class="nav-link" href="#idocs_image">Image</a></li>
-            <li class="nav-item"><a class="nav-link" href="#idocs_video">Video</a></li>
-          </ul>
-        </li>
-        <li class="nav-item"><a class="nav-link" href="#idocs_components">Components</a>
-          <ul class="nav flex-column">
-            <li class="nav-item"><a class="nav-link" href="#idocs_accordion">Accordion</a></li>
-            <li class="nav-item"><a class="nav-link" href="#idocs_tabs">Tabs</a></li>
-            <li class="nav-item"><a class="nav-link" href="#idocs_social_icon">Social Icon</a></li>
-            <li class="nav-item"><a class="nav-link" href="#idocs_helper_classes">Helper Classes</a></li>
-          </ul>
-        </li>
-        <li class="nav-item"><a class="nav-link" href="#idocs_faq">FAQ</a></li>
-        <li class="nav-item"><a class="nav-link" href="#idocs_source_credits">Source & Credits</a></li>
-        <li class="nav-item"><a class="nav-link" href="#idocs_support">Support</a></li>
-          <ul class="nav flex-column">
-            <li class="nav-item"><a class="nav-link" href="#v1-1">v1.1</a></li>
-            <li class="nav-item"><a class="nav-link" href="#v1-0">v1.0</a></li>
-          </ul>
-        </li>
-      </ul>
     </div>
-      {{ content }}
-  </div>  
-  <footer id="footer" class="section">
+  </div>
+  <footer>
     <div class="container">
       <p class="footer-info text-center">&copy; Copyright {{ 'now' | date: "%Y" }} {{ site.data.global.title }} | All rights Reserved</p>
-	    <p class="text-2 text-center mb-0">Design &amp; Developed by <a class="btn-link" target="_blank" href="#">Kenneth Muturi</a>.</p>
+      <p class="text-2 text-center mb-0">Designed &amp; Developed by <a class="btn-link" target="_blank" href="#">Kenneth Muturi</a>.</p>
     </div>
-  </footer>  
-</div>
-<a id="back-to-top" data-toggle="tooltip" title="Back to Top" href="javascript:void(0)"><i class="fa fa-chevron-up"></i></a> 
-
-<script src="assets/vendor/jquery/jquery.min.js"></script> 
-<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script> 
-<script src="assets/vendor/highlight.js/highlight.min.js"></script> 
-<script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script> 
-<script src="assets/vendor/magnific-popup/jquery.magnific-popup.min.js"></script> 
-<script src="assets/js/theme.js"></script>
+  </footer>
+  <div class="" id="back-top"> <a href="#"><i class="fa fa-angle-double-up"></i></a> </div>
+	<script src="assets/jquery.js"></script>
+	<script src="assets/scripts.js"></script>
 </body>
 </html>
