@@ -4,7 +4,7 @@
   {% if site.data.global.mode == 'development' %}
   {% assign theme_base_url = site.data.global.dev_url %}
   {% else %}
-  {% assign theme_base_url = site.data.global.baseurl | prepend: site.data.global.url %}
+  {% assign theme_base_url = site.data.global.url %}
   {% endif %}
   
   <base href="{{ theme_base_url }}" />
