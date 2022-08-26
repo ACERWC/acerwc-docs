@@ -16,8 +16,7 @@ keywords: "ACERWC, The African Committee of Experts on the Rights and Welfare of
 
 dev_url: //localhost:4000/
 # url:  //www.acerwc.africa
-url:  https://ken-muturi.github.io/
-baseurl: acerwc-docs/
+url:  https://ken-muturi.github.io/acerwc-docs/
 
 # Color settings (hex-codes without the leading hash-tag)
 color:
