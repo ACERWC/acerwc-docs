@@ -1,7 +1,3 @@
-
-/* --------------------------------------------------------------------- */
-/* TYPOGRAPHY
-/* --------------------------------------------------------------------- */
 body {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     text-overflow: ellipsis;
@@ -36,8 +32,6 @@ h2,
 h3,
 h4,
 h5 {
-    /* line-height: 1.2;
-        font-weight: 700; */
     text-transform: uppercase;
 }
 h1 {
@@ -54,7 +48,8 @@ h1:after {
 
 h2 {
     font-size: 20px;
-        margin-bottom: 20px;
+    margin-bottom: 20px;
+    font-weight: 400;
 }
 h2:after {
     display: block;
@@ -99,7 +94,6 @@ h6 {
     margin-top: 40px;
 }
 
-
 a.button {
     display: inline-block;
     padding: 10px 25px;
@@ -112,13 +106,6 @@ a.button {
 a.button:hover {
     background: #6c6c6c;
 }
-
-
-
-
-/* --------------------------------------------------------------------- */
-/* HEADER
-/* --------------------------------------------------------------------- */
 
 #header {
     position: fixed;
@@ -138,10 +125,6 @@ a.button:hover {
     text-align: center;
         display: block;
 }
-
-
-
-/* === NAVIGATION === */
 
 #main-navigation {
     position: absolute;
@@ -171,12 +154,6 @@ a.button:hover {
     background: #535353;
 }
 
-
-
-/* --------------------------------------------------------------------- */
-/* WRAPPER
-/* --------------------------------------------------------------------- */
-
 #page-wrapper {
     position: absolute;
     top: 0;
@@ -188,9 +165,6 @@ section {
     padding: 20px;
 }
 
-/* --------------------------------------------------------------------- */
-/* Tabs
-/* --------------------------------------------------------------------- */
 .tab-content-tabs {
     background: #f1f1f1;
     border: 1px solid #d1d1d1;
@@ -254,9 +228,6 @@ section {
     padding: 20px;
 }
 
-/* --------------------------------------------------------------------- */
-/* Shortcode
-/* --------------------------------------------------------------------- */
 pre.shortcode {
     overflow-x: auto !important;
     padding: 0 !important;
