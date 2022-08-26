@@ -62,13 +62,10 @@
 		}
 		//active menu
 		jQuery('#nav .nav-item dt a').each(function () {
-			var thisItem = jQuery(this);
-			var thisId2 = jQuery(this).attr('href');
-			if (jQuery(thisId2).length > 0) {
-				var thistopOffset2 = jQuery(thisId2).offset().top - 15;
-
-				if (thistopOffset2 <= currentP && thistopOffset2 + jQuery(thisId2).outerHeight() > currentP) {
-
+			var href = jQuery(this).attr('href');
+			if (jQuery(href).length > 0) {
+				var thistopOffset2 = jQuery(href).offset().top - 15;
+				if (thistopOffset2 <= currentP && thistopOffset2 + jQuery(href).outerHeight() > currentP) {
 					jQuery(this).parents('li').addClass("act_item open_item");
 					if (jQuery(this).parents('li').find('dd').length > 0) {
 						jQuery(this).parents("li").find('dd').slideDown(300);
@@ -82,7 +79,6 @@
 
 		});
 		jQuery('#nav .nav-item dd a').each(function () {
-			var thisItem = jQuery(this);
 			var thisId2 = jQuery(this).attr('href');
 			if (jQuery(thisId2).length > 0) {
 				var thistopOffset2 = jQuery(thisId2).offset().top - 15;
