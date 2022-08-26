@@ -47,7 +47,7 @@ quiet:    false
 defaults: []
 
 markdown: kramdown
-permalink: pretty
+permalink:     /:title.html
 
 # Credits content
 credits: 'test'
