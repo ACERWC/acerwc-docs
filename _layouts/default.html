@@ -4,10 +4,10 @@
   {% if site.data.global.mode == 'development' %}
   {% assign theme_base_url = site.data.global.dev_url %}
   {% else %}
-  {% assign theme_base_url = site.data.global.url %}
+  {% assign theme_base_url = site.data.global.baseurl | prepend: site.data.global.url %}
   {% endif %}
   
-  <base href="{{ site.baseurl }}" />
+  <base href="{{ theme_base_url }}" />
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=no">
@@ -31,11 +31,11 @@
         <div class="row">
           <div class="col-xs-12 col-md-3 col-lg-2">
             <div class="affix-top" id="nav_container">
-              <a href="/" id="affect_all" target="_blank"> <span class="expand" style="padding-top: 10px;display: block;"><strong>ACERWC Documentation</strong></span></a>
+              <a href="" id="affect_all" target="_blank"> <span class="expand" style="padding-top: 10px;display: block;"><strong>ACERWC Documentation</strong></span></a>
               <div class="clearfix"></div>              
               <ul class="nav nav-list bs-docs-sidenav" id="nav">
                 <li class="nav-item item1 first">
-                  <dl class="slide-down"> <dt><a href="/index/" class="fa fa-info">Getting Started</a></dt>
+                  <dl class="slide-down"> <dt><a href="/" class="fa fa-info">Getting Started</a></dt>
                   </dl>
                 </li>
                 <li class="nav-item item2 open_item">
@@ -44,11 +44,11 @@
                   </dl>
                   <dd>
                     <ul class="list">
-                        <li class="first"><a  class="nav-link" href="/getting-started/why-drupal">Drupal CMS</a></li>
-                        <li class="first"><a class="nav-link" href="/getting-started/installation">Installation</a></li>
-                        <li class="first"><a class="nav-link" href="/getting-started/site-planning">Site Planning</a></li>
-                        <li class="first"><a class="nav-link" href="/getting-started/content-types">Content Types</a></li>
-                        <li class="first"><a class="nav-link" href="/getting-started/appearance">Appearance</a></li>
+                        <li class="first"><a  class="nav-link" href="getting-started/why-drupal">Drupal CMS</a></li>
+                        <li class="first"><a class="nav-link" href="getting-started/installation">Installation</a></li>
+                        <li class="first"><a class="nav-link" href="getting-started/site-planning">Site Planning</a></li>
+                        <li class="first"><a class="nav-link" href="getting-started/content-types">Content Types</a></li>
+                        <li class="first"><a class="nav-link" href="getting-started/appearance">Appearance</a></li>
                       </ul>
                   </dd>
                 </li>   
@@ -58,24 +58,24 @@
                   </dl> 
                     <dd>
                       <ul class="list">
-                        <li class="first"><a class="nav-link" href="/acerwc/website-management/">ACERWC Admin Page</a></li>
-                        <!-- <li class="first"><a class="nav-link" href="/acerwc/content-types/activities">ACERWC Activities</a></li>
-                        <li class="first"><a class="nav-link" href="/acerwc/content-types/collaborations">ACERWC Collaborations</a></li>
-                        <li class="first"><a class="nav-link" href="/acerwc/content-types/communications">ACERWC Communications</a></li>
-                        <li class="first"><a class="nav-link" href="/acerwc/content-types/country-rapporteurs">ACERWC Country Rapporteurs</a></li>
-                        <li class="first"><a class="nav-link" href="/acerwc/content-types/country-visits">ACERWC Country Visits</a></li>
-                        <li class="first"><a class="nav-link" href="/acerwc/content-types/dac">ACERWC DAC</a></li>
-                        <li class="first"><a class="nav-link" href="/acerwc/content-types/experts-members">Experts And Members</a></li>
-                        <li class="first"><a class="nav-link" href="/acerwc/content-types/opportunities">Vacancies/Tenders</a></li>
-                        <li class="first"><a class="nav-link" href="/acerwc/content-types/key-documents">Key Documents</a></li>
-                        <li class="first"><a class="nav-link" href="/acerwc/content-types/case-law-database">Case Law Database</a></li>
-                        <li class="first"><a class="nav-link" href="/acerwc/content-types/publications">Publications</a></li>
-                        <li class="first"><a class="nav-link" href="/acerwc/content-types/rapporteur-thematic-areas">Rapportuer Thematic Areas</a></li>
-                        <li class="first"><a class="nav-link" href="/acerwc/content-types/secretariat">Secretariat</a></li>
-                        <li class="first"><a class="nav-link" href="/acerwc/content-types/sessions">Sessions</a></li>
-                        <li class="first"><a class="nav-link" href="/acerwc/content-types/state-party-ratifications">State Parties</a></li>
-                        <li class="first"><a class="nav-link" href="/acerwc/content-types/state-party-reports">State Party Reports</a></li>
-                        <li class="first"><a class="nav-link" href="/acerwc/content-types/working-groups">Working Groups</a></li> -->
+                        <li class="first"><a class="nav-link" href="acerwc/website-management/">ACERWC Admin Page</a></li>
+                        <!-- <li class="first"><a class="nav-link" href="acerwc/content-types/activities">ACERWC Activities</a></li>
+                        <li class="first"><a class="nav-link" href="acerwc/content-types/collaborations">ACERWC Collaborations</a></li>
+                        <li class="first"><a class="nav-link" href="acerwc/content-types/communications">ACERWC Communications</a></li>
+                        <li class="first"><a class="nav-link" href="acerwc/content-types/country-rapporteurs">ACERWC Country Rapporteurs</a></li>
+                        <li class="first"><a class="nav-link" href="acerwc/content-types/country-visits">ACERWC Country Visits</a></li>
+                        <li class="first"><a class="nav-link" href="acerwc/content-types/dac">ACERWC DAC</a></li>
+                        <li class="first"><a class="nav-link" href="acerwc/content-types/experts-members">Experts And Members</a></li>
+                        <li class="first"><a class="nav-link" href="acerwc/content-types/opportunities">Vacancies/Tenders</a></li>
+                        <li class="first"><a class="nav-link" href="acerwc/content-types/key-documents">Key Documents</a></li>
+                        <li class="first"><a class="nav-link" href="acerwc/content-types/case-law-database">Case Law Database</a></li>
+                        <li class="first"><a class="nav-link" href="acerwc/content-types/publications">Publications</a></li>
+                        <li class="first"><a class="nav-link" href="acerwc/content-types/rapporteur-thematic-areas">Rapportuer Thematic Areas</a></li>
+                        <li class="first"><a class="nav-link" href="acerwc/content-types/secretariat">Secretariat</a></li>
+                        <li class="first"><a class="nav-link" href="acerwc/content-types/sessions">Sessions</a></li>
+                        <li class="first"><a class="nav-link" href="acerwc/content-types/state-party-ratifications">State Parties</a></li>
+                        <li class="first"><a class="nav-link" href="acerwc/content-types/state-party-reports">State Party Reports</a></li>
+                        <li class="first"><a class="nav-link" href="acerwc/content-types/working-groups">Working Groups</a></li> -->
                       </ul>
                     </dd>
                 </li> 
@@ -85,23 +85,23 @@
                   </dl>
                   <dd>
                     <ul class="list">
-                      <li class="first"><a class="nav-link" href="/acerwc-theme/regions/">ACERWC Theme Region</a></li>
-                      <li class="first"><a class="nav-link" href="/acerwc-theme/block-configuration/">Block Configuration</a></li>
+                      <li class="first"><a class="nav-link" href="acerwc-theme/regions/">ACERWC Theme Region</a></li>
+                      <li class="first"><a class="nav-link" href="acerwc-theme/block-configuration/">Block Configuration</a></li>
                     </ul>
                   </dd>
                 </li>                
                 <li class="nav-item item7">
                   <dl class="slide-down">
-                    <dt><a href="/acerwc/content-builder/" class="fa fa-angle-double-right">Using Content builder</a></dt>
+                    <dt><a href="acerwc/content-builder/" class="fa fa-angle-double-right">Using Content builder</a></dt>
                   </dl>
                 </li> 
                 <li class="nav-item item8">
                   <dl class="slide-down">
-                    <dt><a href="/acerwc-theme/settings" class="fa fa-angle-double-right">Theme settings</a></dt>
+                    <dt><a href="acerwc-theme/settings" class="fa fa-angle-double-right">Theme settings</a></dt>
                   </dl>
               </li>
               <li class="nav-item item10 last">
-                  <dl class="slide-down"> <dt><a href="/drupal-updates/" class="fa fa-angle-double-right" style="color: #ff1d4e; font-weight: 700;">Update Drupal 9</a></dt>
+                  <dl class="slide-down"> <dt><a href="drupal-updates/" class="fa fa-angle-double-right" style="color: #ff1d4e; font-weight: 700;">Update Drupal 9</a></dt>
                   </dl>
               </li>                                          
               </ul>

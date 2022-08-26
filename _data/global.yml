@@ -14,9 +14,10 @@ email:  acerwc-secretariat@africa-union.org
 description: "."
 keywords: "ACERWC, The African Committee of Experts on the Rights and Welfare of the Child, AU, Communications, Ratifications, Children, Children Welfare"
 
-dev_url: //localhost:4000
+dev_url: //localhost:4000/
 # url:  //www.acerwc.africa
-url:  //
+url:  https://ken-muturi.github.io/
+baseurl: acerwc-docs/
 
 # Color settings (hex-codes without the leading hash-tag)
 color:
