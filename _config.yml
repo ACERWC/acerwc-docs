@@ -1,5 +1,8 @@
 encoding: utf-8
 
+url: https://ken-muturi.github.io
+baseurl: /acerwc-docs
+
 # Where things are
 source:      .
 destination: ./_site
