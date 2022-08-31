@@ -52,10 +52,10 @@
 				//Back to top
 				if (scrollP >= headerH) {
 					jQuery('#back-top').addClass('show');
-					jQuery('.affix-top').addClass('ontop');
+					// jQuery('.affix-top').addClass('ontop');
 				} else {
 					jQuery('#back-top').removeClass('show');
-					jQuery('.affix-top').removeClass('ontop');
+					// jQuery('.affix-top').removeClass('ontop');
 				}
 				currentP = jQuery(window).scrollTop();
 			}
